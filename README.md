@@ -11,6 +11,7 @@
 - [4. Test your builds](#4-test-your-builds)
 - [5. Request for packaging](#5-request-for-packaging)
 - [6. Merge request](#6-merge-request)
+- [Contributing](#contributing)
 - [License](#license)
 
 
@@ -244,6 +245,11 @@ For reference, check [this request for packaging](https://gitlab.com/fdroid/rfp/
 For reference, check this [merge request](https://gitlab.com/fdroid/fdroiddata/-/merge_requests/15068)
 
 The F-Droid maintainers are super helpful as long as you're being respectful.
+
+
+
+## Contributing
+New pull requests can be submitted [here](https://github.com/StellarSand/F-Droid-Submit-Guide/pulls).
 
 
 
