@@ -1,4 +1,4 @@
-## 2. Release a signed build of your app
+# 2. Release a signed build of your app
 - In Android Studio > Build > Generate signed APK
 - Create a tagged release (let's say on GitHub) with the generated signed apk.
 

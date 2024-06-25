@@ -1,9 +1,11 @@
-## 1. App Metadata
+# 1. App Metadata
 The app's metadata should follow the `Fastlane` or `Triple-T` structure. I recommend using the `Fastlane` structure.
 
 You can read more about the app metadata [here](https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots/).
 
-#### Fastlane
+
+
+## Fastlane
 - Create any **one** of the following directories in the root of your app directory >
   - `fastlane/metadata/android`: For the rest of this guide I'll assume you created this directory
     ```mermaid
@@ -68,7 +70,9 @@ flowchart LR
 
 For reference, check [this fastlane structure](https://github.com/StellarSand/IYPS/tree/main/fastlane/metadata/android).
 
-#### Triple-T
+
+
+## Triple-T
 - Create any **one** of the following directories within the `src` directory of your app module (in most cases the app module is the directory named `app`) >
   - `main/play`
     ```mermaid

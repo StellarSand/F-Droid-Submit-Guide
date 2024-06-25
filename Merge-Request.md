@@ -1,4 +1,4 @@
-## 4. Merge request
+# 4. Merge request
 - Go to the main [fdroiddata repo](https://gitlab.com/fdroid/fdroiddata) > Merge Requests > Open new request >
   - Source branch: your created branch
   - Target branch: master

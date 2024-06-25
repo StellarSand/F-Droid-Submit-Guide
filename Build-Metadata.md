@@ -1,4 +1,4 @@
-## 3. Build Metadata
+# 3. Build Metadata
 - Create an account on [GitLab](https://about.gitlab.com).
 - Fork the [fdroiddata](https://gitlab.com/fdroid/fdroiddata) repo.
 - Create a new branch named after your app’s name or its package name.
@@ -9,7 +9,9 @@ You can read more about the build metadata [here](https://f-droid.org/en/docs/Bu
 Before proceeding further, decide whether you want reproducible builds or not.
 <br>A benefit of reproducible builds is that users can upgrade to a new version of your app irrespective of where they previously installed it from. Example: Users can install the apk from GitHub and upgrade later to a newer version using F-Droid & vice-versa.
 
-#### Reproducible builds
+
+
+## Reproducible builds
 - Assuming that when creating a tagged release earlier, the tag was named with a `v` (example: `v1.0.0`) and the apk was named `MyApp_v1.0.0`.
 - In the root directory of your app, open the `local.properties` file.
 - Copy the `sdk.dir` value. Example: `/home/JohnDoe/Android-SDK`.
@@ -63,7 +65,9 @@ Before proceeding further, decide whether you want reproducible builds or not.
   ```
 - Commit the changes
 
-#### Non-reproducible builds
+
+
+## Non-reproducible builds
 - Assuming that when creating a tagged release earlier, the tag was named with a `v` (example: `v1.0.0`) and the apk was named `MyApp_v1.0.0`.
 - Type the metadata in the build metadata file created earlier (`com.myapp.yml`).
   <br>Here's an example for non-reproducible builds:
