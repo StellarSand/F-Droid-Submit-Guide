@@ -88,8 +88,7 @@ For reference, check [this fastlane structure](https://github.com/StellarSand/IY
   - `contact-email.txt`: Developer/Author email
   - `contact-website.txt`: Developer/Author website
   - `release-notes` directory: Within this, create >
-    - `en-US` directory: Within this create >
-      - `default.txt`: Latest changelog
+    - `en-US` directory: Include a single changelog named as `default.txt` (max 500 characters, plain text).
   - `listings` directory
   ```mermaid
     flowchart LR
