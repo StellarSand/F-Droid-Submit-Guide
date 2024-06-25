@@ -8,8 +8,7 @@
 - [3. Build metadata](#3-build-metadata)
   - [Reproducible builds](#reproducible-builds)
   - [Non-reproducible builds](#non-reproducible-builds)
-- [4. Request for packaging](#4-request-for-packaging)
-- [5. Merge request](#5-merge-request)
+- [4. Merge request](#4-merge-request)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -169,17 +168,8 @@ Before proceeding further, decide whether you want reproducible builds or not.
 
 
 
-## 4. Request for packaging
-- Open a new issue [here](https://gitlab.com/fdroid/rfp/-/issues).
-- Select the `Submission` template and remove unnecessary information.
-
-For reference, check [this request for packaging](https://gitlab.com/fdroid/rfp/-/issues/2757).
-
-
-
-## 5. Merge request
-- Once the pipeline succeeds, go to the main [fdroiddata repo](https://gitlab.com/fdroid/fdroiddata).
-- Go to Merge Requests > Open new request >
+## 4. Merge request
+- Go to the main [fdroiddata repo](https://gitlab.com/fdroid/fdroiddata) > Merge Requests > Open new request >
   - Source branch: your created branch
   - Target branch: master
   - Select template as `App inclusion`.
@@ -192,6 +182,11 @@ The F-Droid maintainers are super helpful as long as you're being respectful.
 
 ## Contributing
 New pull requests can be submitted [here](https://github.com/StellarSand/F-Droid-Submit-Guide/pulls).
+
+
+
+## Credits
+- [licaon-kter](https://github.com/licaon-kter) for reviewing & improving this guide.
 
 
 
