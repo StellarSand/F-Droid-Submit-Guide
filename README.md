@@ -3,12 +3,10 @@
 
 
 ## Contents
-- [1. App metadata (Start here)](#1-app-metadata)
-- [2. Release a signed build of your app](#2-release-a-signed-build-of-your-app)
-- [3. Build metadata](#3-build-metadata)
-  - [Reproducible builds](#reproducible-builds)
-  - [Non-reproducible builds](#non-reproducible-builds)
-- [4. Merge request](#4-merge-request)
+- [1. App metadata (Start here)](https://github.com/StellarSand/F-Droid-Submit-Guide/blob/main/App-Metadata.md)
+- [2. Release a signed build of your app](https://github.com/StellarSand/F-Droid-Submit-Guide/blob/main/Release-Signed-Build.md)
+- [3. Build metadata](https://github.com/StellarSand/F-Droid-Submit-Guide/blob/main/Build-Metadata.md)
+- [4. Merge request](https://github.com/StellarSand/F-Droid-Submit-Guide/blob/main/Merge-Request.md)
 - [Contributing](#contributing)
 - [Credits](#credits)
 - [License](#license)
