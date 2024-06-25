@@ -8,9 +8,8 @@
 - [3. Build metadata](#3-build-metadata)
   - [Reproducible builds](#reproducible-builds)
   - [Non-reproducible builds](#non-reproducible-builds)
-- [4. Test your builds](#4-test-your-builds)
-- [5. Request for packaging](#5-request-for-packaging)
-- [6. Merge request](#6-merge-request)
+- [4. Request for packaging](#4-request-for-packaging)
+- [5. Merge request](#5-merge-request)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -170,67 +169,7 @@ Before proceeding further, decide whether you want reproducible builds or not.
 
 
 
-## 4. Test your builds
-This section is currently for Linux only. Steps for Windows & macOS will be included soon, although they don't vary much from the Linux ones.
-
-#### Download Docker & GitLab Runner binaries
-- Download [Docker](https://www.docker.com/get-started/) from package manager.
-- Start Docker service:
-   ```bash
-   sudo systemctl start docker
-   ```
-- Download a Docker image:
-   ```bash
-   sudo docker pull gitlab/gitlab-runner
-   ```
-- Download [GitLab Runner](https://docs.gitlab.com/runner/install/linux-manually.html#using-binary-file) binaries. Follow till Step `4`.
-
-#### Register GitLab Runner
-- In your branch of the `fdroidata` repo, go to Settings > CI/CD > Runners > Expand
-- Go to `Project runners` > New project runner >
-  - Tags: whatever you want. Multiple tags separated by commas.
-      <br>Example: `Linux`, `saas-linux-medium-amd64`
-  - select `Run untagged jobs`
-  - Description (optional): whatever you want
-  - Configuration: select `Lock to current projects`
-  
-  Click on `Create runner`
-
-- Copy the command shown there. Example:
-    ```bash
-    gitlab-runner register  --url https://gitlab.com  --token glrt-XXXX
-    ```
-- Open a terminal & run the copied command with `sudo`
-  - GitLab instance URL: `https://gitlab.com/`
-  - name of runner: whatever you want
-  - executor: `docker`
-  - docker image: `gitlab/gitlab-runner`
-
-#### Run GitLab Runner
-- In your branch of the `fdroidata` repo, go to Settings > CI/CD > Runners > Expand
-- Under `Assigned project runners`, check green circle next to the runner (this means it has successfully contacted the service).
-  <details>
-    <summary>If there's no green circle and it shows warning sign or paused:</summary>
-    
-    - Run:
-      ```bash
-      sudo gitlab-runner verify
-      ```
-    - Refresh the page & it'll show green circle next to the runner.
-  </details>
-
-- Run gitlab-runner:
-   ```bash
-   sudo gitlab-runner run --config /etc/gitlab-runner/config.toml --working-directory /home/gitlab-runner
-   ```
-
-#### Run a new pipeline
-- In your branch of the `fdroidata` repo, go to Build > Pipelines > Run Pipeline > Select your created branch > Run
-- Keep the terminal open till all jobs are complete.
-
-
-
-## 5. Request for packaging
+## 4. Request for packaging
 - Open a new issue [here](https://gitlab.com/fdroid/rfp/-/issues).
 - Select the `Submission` template and remove unnecessary information.
 
@@ -238,9 +177,12 @@ For reference, check [this request for packaging](https://gitlab.com/fdroid/rfp/
 
 
 
-## 6. Merge request
+## 5. Merge request
 - Once the pipeline succeeds, go to the main [fdroiddata repo](https://gitlab.com/fdroid/fdroiddata).
-- Go to Merge Requests > Open new request > Source branch: your created branch > Target branch: master > Select template as `App inclusion`.
+- Go to Merge Requests > Open new request >
+  - Source branch: your created branch
+  - Target branch: master
+  - Select template as `App inclusion`.
 
 For reference, check this [merge request](https://gitlab.com/fdroid/fdroiddata/-/merge_requests/15068)
 
