@@ -10,6 +10,7 @@
   - [Non-reproducible builds](#non-reproducible-builds)
 - [4. Merge request](#4-merge-request)
 - [Contributing](#contributing)
+- [Credits](#credits)
 - [License](#license)
 
 
