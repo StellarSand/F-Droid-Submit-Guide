@@ -3,6 +3,7 @@
   - Source branch: your created branch
   - Target branch: master
   - Select template as `App inclusion`.
+  - Read the template carefully and perform the required actions that are applicable.
 
 For reference, check this [merge request](https://gitlab.com/fdroid/fdroiddata/-/merge_requests/15068)
 

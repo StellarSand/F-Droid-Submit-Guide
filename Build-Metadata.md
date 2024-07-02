@@ -12,7 +12,7 @@ Before proceeding further, decide whether you want reproducible builds or not.
 
 
 ## Reproducible builds
-- Assuming that when creating a tagged release earlier, the tag was named with a `v` (example: `v1.0.0`) and the apk was named `MyApp_v1.0.0`.
+- Assuming that when creating a tagged release earlier, the tag was named with a `v` (example: `v1.0.0`) and the apk was named `MyApp_v1.0.0.apk`.
 - In the root directory of your app, open the `local.properties` file.
 - Copy the `sdk.dir` value. Example: `/home/JohnDoe/Android-SDK`.
 - Go to `/home/JohnDoe/Android-Sdk/build-tools/` & check the latest `build-tools` version installed. Example: `34.0.0`.
@@ -68,7 +68,7 @@ Before proceeding further, decide whether you want reproducible builds or not.
 
 
 ## Non-reproducible builds
-- Assuming that when creating a tagged release earlier, the tag was named with a `v` (example: `v1.0.0`) and the apk was named `MyApp_v1.0.0`.
+- Assuming that when creating a tagged release earlier, the tag was named with a `v` (example: `v1.0.0`) and the apk was named `MyApp_v1.0.0.apk`.
 - Type the metadata in the build metadata file created earlier (`com.myapp.yml`).
   <br>Here's an example for non-reproducible builds:
   ```yml
